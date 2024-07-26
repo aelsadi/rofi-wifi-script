@@ -9,7 +9,7 @@ A script that allows Wifi networks to be displayed and controlled in rofi
 - See currently connected network 
 ## Dependencies 
 - Rofi
-- nmcli 
+- NetworkManager 
 - Libnotify
 - Nerd fonts (for icons)
 ## Setup
