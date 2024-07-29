@@ -7,6 +7,7 @@ A script that allows Wifi networks to be displayed and controlled in rofi
 - Connect/disconnect and forget networks
 - Enable/disable auto-connect for networks 
 - See currently connected network 
+- Enable/disable Wireguard VPNs added to NetworkManager (optional)
 ## Dependencies 
 - Rofi
 - NetworkManager 
