@@ -18,7 +18,7 @@ A script that allows Wifi networks to be displayed and controlled in rofi
 - ```bash 
     git clone  https://github.com/aelsadi/rofi-wifi-script.git
     cd rofi-wifi-script
-    bash "./script.sh"
+    bash "./script.sh" #use 'bash ./script_with_vpn_list.sh' for vpn list 
     ```
 - Optional: add to $Path to allow it to be called from anywhere
 ## Limitations
