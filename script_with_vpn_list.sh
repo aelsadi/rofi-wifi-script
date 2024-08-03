@@ -33,9 +33,9 @@ if [[ $choosen_wifi =~ "󰤭 Disable Wifi" ]]; then
 elif [[ "$choosen_wifi" =~ "󰖂 VPN List" ]]; then
   choosen_vpn=$(nmcli -t -f state,name,type  connection show | grep "wireguard" | sed 's/^://g' | sed 's/^activated:/  /g' | sed 's/:.*//g' | rofi -dmenu -i -p "Select a VPN")
   if [[ $(echo $choosen_vpn | grep ) ]]; then 
-    nmcli connection down "${choosen_vpn:3}"
+    nmcli connection down "${choosen_vpn:3}" && notify-send "Wifi" "Disconnected from ${choosen_vpn:3}"
   else
-    nmcli connection up "${choosen_vpn}"
+    nmcli connection up "${choosen_vpn}" && notify-send "Wifi" "Connected to ${choosen_vpn}"
   fi
 elif [[ -n $choosen_wifi ]]; then
   if [[ $(echo $choosen_wifi | grep ) ]]; then
